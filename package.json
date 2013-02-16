@@ -1,0 +1,30 @@
+{
+  "name": "fuse-vertices",
+  "version": "0.0.0",
+  "description": "Fuses vertices in meshes together",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/fuse-vertices.git"
+  },
+  "keywords": [
+    "fuse",
+    "vertices",
+    "mesh",
+    "simplicial",
+    "complex",
+    "geometry",
+    "3d",
+    "triangle"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "3d8305c3426c73efb3a1a1be09d010028ee6b305"
+}
