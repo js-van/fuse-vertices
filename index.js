@@ -12,7 +12,6 @@ function fuseVertices(cells, positions, tolerance) {
   var n_index     = new Array(positions.length);
   var r           = new Array(positions[0].length);
   for(var i=0; i<positions.length; ++i) {
-    
     var p = positions[i];
     for(var j=0; j<p.length; ++j) {
       r[j] = Math.floor(p[j] / tolerance);
@@ -40,11 +39,11 @@ i_loop:
         }
       }
     }
-    n_faces.push(face);
+    n_cells.push(face);
   }
   
   //Return resulting mesh
-  return { positions: n_positions, cells: n_faces, vertex_relabel: n_index };
+  return { positions: n_positions, cells: n_cells, vertex_relabel: n_index };
 };
 
-module.exports.fuseVertices = fuseVertices;
+module.exports = fuseVertices;
