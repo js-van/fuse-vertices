@@ -31,7 +31,7 @@ Returns an object with the following properties:
 
 * `cells`: The fused cells
 * `positions`: The positions of the fused vertices
-* `vertex_relabel`: A relabelling of the vertices
+* `vertexRelabel`: A relabelling of the vertices
 
 Credits
 =======

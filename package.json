@@ -1,10 +1,15 @@
 {
   "name": "fuse-vertices",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fuses vertices in meshes",
   "main": "index.js",
   "directories": {
     "test": "tap test/*"
+  },
+  "dependencies": {
+    "n-body-pairs": "~0.1.0",
+    "iota-array": "~0.0.0",
+    "generic-slice": "~0.0.0"
   },
   "devDependencies": {
     "tap": "*"
