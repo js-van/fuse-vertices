@@ -50,9 +50,10 @@ function fuseVertices(cells, positions, tolerance) {
       weights.push(1.0)
     } else {
       var parent_index = n_index[i]
-      n_index[i] = n_index[parent_index]
-      var p = positions[i]
-        , q = n_positions[parent_index]
+        , n_label = n_index[parent_index]
+        , p = positions[i]
+        , q = n_positions[n_label]
+      n_index[i] = n_label
       for(var j=0; j<d; ++j) {
         q[j] += p[j]
       }
